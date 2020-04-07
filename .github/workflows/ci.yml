@@ -1,5 +1,5 @@
 name: ci
-on [push]
+on: [push]
 jobs:
   ci:
     timeout-minutes: 20
@@ -10,8 +10,8 @@ jobs:
       - uses: actions/setup-node@v1
         name: Use Node.js 13.x
         with:
-          registry-url: 'https://npm.pkg.github.com'
-          node-version: '13.x'
+          registry-url: "https://npm.pkg.github.com"
+          node-version: "13.x"
       - uses: actions/cache@v1
         name: Restore node_modules cache
         id: node_modules
@@ -24,5 +24,4 @@ jobs:
         if: steps.node_modules.outputs.cache-hit != 'true'
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
-      - run: npm run lint
       - run: npm run test
