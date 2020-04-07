@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/santino/storybook-found-router.git"
+    "url": "https://github.com/whatever-company/storybook-found-router.git"
   },
   "keywords": [
     "storybook",
@@ -31,9 +31,9 @@
   "author": "Santino Puleio",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/santino/storybook-found-router/issues"
+    "url": "https://github.com/whatever-company/storybook-found-router/issues"
   },
-  "homepage": "https://github.com/santino/storybook-found-router",
+  "homepage": "https://github.com/whatever-company/storybook-found-router",
   "standard": {
     "ignore": [
       "/lib/"
